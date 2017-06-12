@@ -10,12 +10,14 @@
 
   <body>
     <header>
-      <nav>
-        <%= link_to 'Home', root_path %>
-        <%= link_to 'About', about_path %>
-        <%= link_to 'Contact', contact_path %>
+      <nav class = "navbar navbar-default">
+        <div class="navbar-collapse">
+          <%= link_to 'Home', root_path %>
+          <%= link_to 'About', about_path %>
+          <%= link_to 'Contact', contact_path %>
+        </div>
       </nav>
-    </header><hr>
+    </header>
     <%= yield %>
     <hr>
     <footer>&copy 2017 Mnene Science Students Association</footer>
